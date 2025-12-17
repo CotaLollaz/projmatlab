@@ -9,16 +9,20 @@ if resposta==0
             'Efetuar cálculos','Mostrar a localização','Sair do programa');
     end
 else
-    switch resposta
-        case 1
-            % Carregar dados
-        case 2
-            % Mostrar dados
-        case 3
-            % Fazer o calculos
-        case 4
-            % Mostrar localização
-        case 5
-            return;
+    while ~(resposta==0)
+        resposta=menu('Opções','Carregar dados','Mostrar dados',...
+            'Efetuar cálculos','Mostrar a localização','Sair do programa');
+        switch resposta
+            case 1
+                % Carregar dados
+            case 2
+                % Mostrar dados
+            case 3
+                % Fazer o calculos
+            case 4
+                % Mostrar localização
+            case 5
+                return;
+        end
     end
 end
