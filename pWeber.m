@@ -4,9 +4,10 @@ while ~(resposta==0)
     resposta=menu('Opções','Carregar dados','Mostrar dados',...
         'Efetuar cálculos','Mostrar a localização','Sair do programa');
     switch resposta
-        case 1
-            PedirFicheiro()
-            %Carregar dados
+        case 1 % o utilizador pode carregar noutro botões sem introduzir o nome do ficheiro, 
+               % isso implica que o ficheiro não seja lido
+            nome=pedirFicheiro;
+            lerOsDados(nome);      %Carregar dados
         case 2
             % Mostrar dados
         case 3
