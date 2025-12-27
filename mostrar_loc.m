@@ -3,6 +3,6 @@ function [] = mostrar_loc(coord)
 % Esta função recebe as coordenadas calculadas como resolução do problema
 % de Weber
 
-fprintf(['Resolução do Problema de Weber\n Coordenadas: X = %d, ' ...
-    'Y = %d\n'],coord(1),coord(2))
+fprintf(['Resolução do Problema de Weber\n Coordenadas: X = %.2f, ' ...
+    'Y = %.2f\n'],coord(1),coord(2))
 end
