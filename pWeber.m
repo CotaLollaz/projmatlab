@@ -5,7 +5,7 @@ while ~(resposta==0)
         'Efetuar cálculos','Mostrar a localização','Sair do programa');
     switch resposta
         case 1
-            PedirFicheiro()
+            PedirFicheiro();
             %Carregar dados
         case 2
             % Mostrar dados
