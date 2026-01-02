@@ -1,5 +1,6 @@
-function nome = ficheiroSemExtencao(Ficheiro)% É preciso ser uma string para funcionar,
-% Como é que meto para a variavle ficheiro para string?
+function nome = ficheiroSemExtencao(Ficheiro)
+%Esta função retira a extenção do Ficheiro e devolve o nome do mesmo
+
     posicao=strfind(Ficheiro,'.'); % Ver a posição do ponto
     if isempty(posicao)
         nome=Ficheiro; % Ficheiro não tem extensão
