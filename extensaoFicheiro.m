@@ -4,6 +4,6 @@ function extensao = extensaoFicheiro(Ficheiro) % Identificar a extenção do fic
     if isempty(posicao)
         extensao = '';
     else
-        extensao = Ficheiro(posicao(end)+1:end); % Determina a extensão
+        extensao = Ficheiro(posicao(end):end); % Determina a extensão
     end
 end
