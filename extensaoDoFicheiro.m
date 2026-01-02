@@ -1,4 +1,4 @@
-function extensao = extensaoDoFicheiro(Ficheiro) % Identificar a extenção do ficheiro
+function extensao = extensaoFicheiro(Ficheiro) % Identificar a extenção do ficheiro
     posicao = strfind(Ficheiro,'.'); % Encontrar a posição dos pontos
     
     if isempty(posicao)
