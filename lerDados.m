@@ -1,4 +1,4 @@
-function [x,y,Q,C] = lerOsDados(nome_f)
+function [coords,Q,C] = lerDados(nome_f)
 
 fid = fopen(nome_f); %abrir o ficheiro
 
@@ -11,9 +11,13 @@ else
     y = data{2};
     Q = data{3}; % Segunda coluna
     C = data{4}; 
+    
     len = length(x);
+
+    coords=zeros(len, 2);
     for i = 1:len
-        fprintf('\n(%g,%g) %g %g',x(i),y(i),Q(i),C(i));
+        aux=[x(i), y(i)];
+        coords(i,:)=aux;
     end 
 end
 
