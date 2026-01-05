@@ -21,7 +21,7 @@ while confirmacao2<0
     if confirmacao2==-1
         fprintf(2,'Não foi possivel ler o ficheiro. Tente novamente.\n');
     else
-        fprintf('Ficheiro fechado com sucesso.')
+        fprintf('Ficheiro fechado com sucesso.\n')
     end
 end
 end
