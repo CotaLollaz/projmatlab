@@ -1,13 +1,12 @@
 function [local, d, CT]= cGrav(coords, Q, C)
-    %Esta funcao resolve o problema de Weber utilizando a heuristica do centro de gravidade
-    %dadas as coordenadas dos pontos relevantes, os custos e as quantidades associadas
-    %a esses pontos
+    %Esta funcao resolve o problema de Weber utilizando a heuristica do 
+    % centro de gravidade dadas as coordenadas dos pontos relevantes,
+    %  os custos e as quantidades associadas a esses pontos
 
 
     %inicialzacao e prealocacao resultados
     d=zeros(1,length(coords));
     CT=0;
-    local=[];
 
     %inicializacao vars centro gravidade
     X=0;
@@ -28,7 +27,7 @@ function [local, d, CT]= cGrav(coords, Q, C)
 
     %Calculo distancias e custo total
     for i=1:length(coords)
-        d(i) =calculaDistancia(coords(i,:), local);
+        d(i)=calculaDistancia(coords(i,:), local);
         CT=CT+calculaProduto(Q(i), C(i), d(i));
     end
        

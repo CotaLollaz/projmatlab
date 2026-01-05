@@ -6,15 +6,19 @@ while ~(resposta==0)
     switch resposta
         case 1 % o utilizador pode carregar noutro botões sem introduzir o nome do ficheiro, 
                % isso implica que o ficheiro não seja lido
-            nome=pedirFicheiro;
-            lerOsDados(nome);      %Carregar dados
+            nome=pedirFicheiro();
+            [coords,Q,C]=lerDados(nome);      %Carregar dados
         case 2
             % Mostrar dados
+            mostrarDados(coords, Q, C);
         case 3
             % Fazer o calculos
+            [local,d, CT]=cGrav(coords,Q,C);
         case 4
             % Mostrar localização
+            escreve(ficheiroSemExtencao(nome), local, CT, coords, Q, C, d);
         case 5
+            escreve(ficheiroSemExtencao(nome), local, CT, coords, Q, C, d, nome);
             %Gravar localização
         case 6
             return;
