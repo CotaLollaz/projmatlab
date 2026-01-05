@@ -3,7 +3,7 @@ function [coords,Q,C] = lerDados(nome_f)
 fid = fopen(nome_f); %abrir o ficheiro
 
 if fid == -1
-    disp('O ficheiro não foi aberto com sucesso');
+    disp('O ficheiro não foi aberto com sucesso\n');
 else 
     cabecalho = fgetl(fid);
     data = textscan(fid, '(%f,%f),%f,%f'); % Lê os dados por colunasn
@@ -24,8 +24,8 @@ end
 fechar = fclose(fid); %fechar o ficheiro
 
 if fechar == -1 %fechar é inválido
-    disp('O ficheiro não foi fechado');
+    fprintf('O ficheiro não foi fechado.\n');
 else 
-    disp('O ficheiro foi fechado com sucesso');
+    fprintf('O ficheiro foi fechado com sucesso.\n');
 
 end

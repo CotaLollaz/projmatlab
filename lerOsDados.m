@@ -3,7 +3,7 @@ function [x,y,Q,C] = lerOsDados(nome_f)
 fid = fopen(nome_f); %abrir o ficheiro
 
 if fid == -1
-    disp('O ficheiro não foi aberto com sucesso');
+    disp('O ficheiro não foi aberto com sucesso\n');
 else 
     cabecalho = fgetl(fid);
     data = textscan(fid, '(%f,%f),%f,%f'); % Lê os dados por colunasn
