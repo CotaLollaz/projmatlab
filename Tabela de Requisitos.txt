@@ -1,0 +1,45 @@
+Atenção: Não altere o nome deste ficheiro, nem o seu formato (texto simples), nem o conteúdo que já está escrito. Apenas, acrescente o que é pedido.
+
+
+Requisito	Satisfação	Observação
+
+rfm1		1               Temos todas as funcionalidades
+
+rim1		1
+rim2		1
+rim3		1
+rim4		1              Fizemos vários testes e não abortou
+rim5		1
+rim6		               Foi substituído pelo ric6
+rim7		               Foi substituído pelo ric7
+rim8		1
+rim9		1
+rim10		1
+rim11		1
+rim12		1
+rim13		1
+rim14		1
+rim15		1
+rim16		1
+rim17		1
+rim18		1
+rim19		1
+
+rem1		1
+rem2		1
+rem3		1
+
+ric1		1
+ric2		1
+ric3		1
+ric4		1
+ric5		1
+ric6		1
+ric7		0.95		Erro de formatação no cabeçalho da tabela dos pontos de interesse
+ric8		1
+ric9		1
+ric10		1
+
+rec1		0.9		Apresentação pode melhorar
+
+rfe1		
