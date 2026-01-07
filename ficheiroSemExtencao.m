@@ -1,9 +1,12 @@
-function nome = ficheiroSemExtencao(Ficheiro)% É preciso ser uma string para funcionar,
-    posicao=strfind(Ficheiro,'.'); % Ver a posição do ponto
-    if isempty(posicao)
-        nome=Ficheiro; % Ficheiro não tem extensão
-    else
-        nome=Ficheiro(1:posicao(end)-1); %devolve o ficheiro sem o que 
-                                           % está para traz do '.'
-    end
+function nome = ficheiroSemExtencao(ficheiro)
+%Esta funcao devolve o nome de um ficheiro sem a sua extensao
+% (ponto nao incluido no retorno)%
+
+posicaoPonto=strfind(ficheiro, '.');
+
+if (isempty(posicaoPonto)) %Ficheiro nao tem extensao
+    nome=ficheiro;
+else
+    nome=ficheiro(1:posicaoPonto(end)-1);
+end
 end

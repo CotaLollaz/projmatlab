@@ -1,0 +1,14 @@
+
+Localização e custo total para o caso dados
+Resolução do Problema de Weber
+Coordenadas: X = 516.00, Y = 518.00
+Custo Total: CT = 214710.03
+---
+
+Pontos de Interesse
+(xi, yi)	|Qi	| Ci	| di
+(300.0, 800.0)	|2.0	| 50.0	| 355.218
+(800.0, 200.0)	|3.0	| 50.0	| 426.357
+(200.0, 500.0)	|2.5	| 75.0	| 316.512
+(600.0, 400.0)	|1.0	| 75.0	| 144.845
+(800.0, 800.0)	|1.5	| 75.0	| 400.225
